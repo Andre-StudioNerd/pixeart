@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- meta tags -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <meta name="description" content="App de pixelart" />
+    <meta name="author" content="Andre Luis Fernandes" />
+    <meta name="reply-to" content="deco.luisfernandes@gmail.com" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="language" content="pt-br" />
+    <meta name="robots" content="index,nofollow" />
+    <meta name="keywords" content="pixel art" />
+
+      <!-- Favicons -->
+  <link href="imgs/favicon.png" rel="icon">
+  <link href="imgs/favicon.png" rel="apple-touch-icon">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>Pixel Art</title>
+  </head>
+  <body>
+    <header>
+      <h1>Faça seu pixelart</h1>
+    </header>
+
+    <main>
+      <aside>
+        <span class="option-title">Tamanho do quadro:</span>
+        <input type="number" class="input-size" min="4" value="10" />
+
+        <span class="option-title">Cor:</span>
+        <input type="color" class="input-color" />
+
+        <span class="option-title">Cores usadas:</span>
+        <section class="used-colors"></section>
+
+        <button class="button-save">Baixar imagem</button>
+      </aside>
+
+      <section class="canvas"></section>
+      <div class="resize"></div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
